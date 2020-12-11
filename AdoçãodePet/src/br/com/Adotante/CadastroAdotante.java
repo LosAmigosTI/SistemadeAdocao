@@ -6,6 +6,7 @@ import javax.swing.JOptionPane;
 
 public class CadastroAdotante extends Adotante{
 	
+	int logado = 0;
 	public void CadastroUsuario() {
 		Scanner Cad = new Scanner(System.in);
 		System.out.println("Digite o seu nome de usuario");
@@ -25,6 +26,8 @@ public class CadastroAdotante extends Adotante{
 				if(senha.equals(senhaUsuario.get(i))) {
 					if(false ==Impedimentos.get(i)) {
 					System.out.println("Login realizado com sucesso");	
+					UsuarioLogado();
+					logado = i;
 					}
 				}else {
 					System.out.println("Login não realizado(Senha ou Usuario Invalidos/Usuario Bloqueado)");
@@ -41,5 +44,8 @@ public class CadastroAdotante extends Adotante{
 				System.out.println("Usuario foi impedido de entrar no sistema");
 			}
 		}
+	}
+	public boolean UsuarioLogado() {
+		return true;
 	}
 }

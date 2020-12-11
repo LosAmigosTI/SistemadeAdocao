@@ -9,8 +9,9 @@ public class Adotante {
 	ArrayList<String> email = new ArrayList();
 	ArrayList<Boolean> Impedimentos = new ArrayList();
 	ArrayList<String> MotivodoImpedimento = new ArrayList(); 
-
-	
-	
+	ArrayList<String> Rua = new ArrayList();
+	ArrayList<String> Numero = new ArrayList();
+	ArrayList<String> Cidade = new ArrayList();
+	ArrayList<String> Cep = new ArrayList();
 	
 }
