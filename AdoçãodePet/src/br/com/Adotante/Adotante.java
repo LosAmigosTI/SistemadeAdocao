@@ -8,7 +8,7 @@ public class Adotante {
 	ArrayList<String> senhaUsuario = new ArrayList();
 	ArrayList<String> email = new ArrayList();
 	ArrayList<Boolean> Impedimentos = new ArrayList();
-	ArrayList<String> motivoDoImpedimento = new ArrayList();
+	ArrayList<String> MotivodoImpedimento = new ArrayList(); 
 
 	
 	

@@ -7,6 +7,5 @@ public class teste {
 		sdr.CadastroUsuario();
 		System.out.println();
 		sdr.Login();
-	
 	}
 }
