@@ -30,10 +30,10 @@ public class CadastroAdotante extends Adotante{
 					loguei = true;
 					logado = i;
 					}
-				}else {
-					System.out.println("Login não realizado(Senha ou Usuario Invalidos/Usuario Bloqueado)");
-					loguei = false;
-				}
+				}			
+			}else {
+				System.out.println("Login não realizado(Senha ou Usuario Invalidos/Usuario Bloqueado)");
+				loguei = false;
 			}
 		}
 	}
@@ -42,7 +42,7 @@ public class CadastroAdotante extends Adotante{
 		for(int i = 0; i< Usuario.size(); i++) {
 			if(imp.equals(Usuario.get(i))) {
 				Impedimentos.set(i, true);
-				MotivodoImpedimento.set(i,JOptionPane.showInputDialog("Motivo do Impedimento"));
+				MotivodoImpedimento.add(i,JOptionPane.showInputDialog("Motivo do Impedimento"));
 				System.out.println("Usuario foi impedido de entrar no sistema");
 			}
 		}

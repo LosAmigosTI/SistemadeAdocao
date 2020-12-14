@@ -6,10 +6,20 @@ public class CadastroEndereco extends CadastroAdotante {
 	
 	public void CadastroEndereço() {
 		if(this.loguei == true) {
-			Rua.set(this.logado,JOptionPane.showInputDialog(Rua));
-			Numero.set(this.logado,JOptionPane.showInputDialog(Numero));
-			Cidade.set(this.logado,JOptionPane.showInputDialog(Cidade));
-			Cep.set(this.logado,JOptionPane.showInputDialog(Cep));
+			try {
+			Rua.add(this.logado,JOptionPane.showInputDialog("Qual o nome da sua Rua?"));
+			Numero.add(this.logado,JOptionPane.showInputDialog("Qual o nome da sua Numero?"));
+			Cidade.add(this.logado,JOptionPane.showInputDialog("Qual o nome da sua Cidade?"));
+			Cep.add(this.logado,JOptionPane.showInputDialog("Qual o nome da sua Cep?"));
+			}catch(IndexOutOfBoundsException e) {
+				System.out.println("Não realizado digite novamente");
+			}
+		System.out.println(
+				 "Rua: " +Rua.get(logado)
+				+ "\nNumero: " +Numero.get(logado)
+				+ "\nCidade: " +Cidade.get(logado)
+				+ "\nCEP" +Cep.get(logado));
+	
 		}
 	}
 }
